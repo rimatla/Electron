@@ -1,0 +1,30 @@
+#On home directory
+# Install the dependencies
+$ npm install
+
+
+# build the application with webpack for the first time
+$ npm run build
+# display the application with Electron
+$ npm run app
+
+#Before start to changing the components run WebPack in watch mode:
+npm run watch
+
+
+************************************************************************************
+Get React Dev Tools into you Electron APP
+1- npm install --save-dev electron-react-devtools
+2- Add the following to your index.html or main react application ex: render.js or render.jsx
+3- Step 2 above is not required for Electron version 1.2.1 or later
+4- Open you react/electron app (view/toggle developer tools
+5- In the CONSOLE tab insert the following snippet:
+     require('electron-react-devtools').install()
+
+6- Voilà !!!
+
+
+
+
+https://www.npmjs.com/package/electron-react-devtools
+

@@ -1,0 +1,66 @@
+From Ray Villalobos
+Electron: Building Cross Platform Desktop Apps
+lynda.com
+
+- How to clone repo and checkout each branch
+
+clone
+https://github.com/planetoftheweb/electron.git
+
+$cd ~/Desktop
+$mkdir electron_pet_app
+$cd electron_pet_app
+
+CLONE
+That's going to download just the contents of the .git folder.
+So this will download the bare repository
+
+$git clone --bare https://github.com/planetoftheweb/electron.git .git
+
+Now we need to convert that to a regular repository
+$git config --bool core.bare false
+$git reset --hard
+
+This is going to give us all of the different branches.
+
+$git branch
+You can see that I have not just the master branch, but every other branch in the project
+
+CHECKOUT BRANCH
+$git checkout 01_02b
+
+You can stash changes
+$git stash
+
+Switch to master
+$git checkout master
+
+npm install --save
+
+/**************
+ELECTRON
+- Electron is a framework for building native applications.
+- it gives you the ability to build real applications for different operating systems.
+- Electron uses technology that web developers are very familiar with. Like HTML, CSS and JavaScript. Now, it also uses NodeJS and Chromium.
+
+- Chromium is essentially a web browser, you have the ability to do things like debug your code and use any HTML, CSS or JavaScript features that you want.
+- Electron creates the cross platform versions of applications for you. So it takes, essentially what is a web application, and converts it so that it runs natively on all kinds of different platforms.
+
+BUILDING APP
+$npm install -g electron
+
+-Save Electron as a development dependency of our project.
+$npm install --save-dev electron
+
+RUN
+$electron .
+. for current directory 
+
+*********************************************************************************************************************************************
+Windows
+-You can use to set up the look and behavior of your windows so you can do things like control the width or height plus create transparent windows, remove their frames and much more.
+http://electron.atom.io/docs/api/browser-window/
+
+Browser windows really have a rich set of options that you can use to configure how everything looks and how things operate so you can do all kinds of things just with that configuration object and it's really cool when you can work with different windows and configure them to do just what you want.
+
+*********************************************************************************************************************************************
