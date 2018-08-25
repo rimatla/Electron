@@ -1,1 +1,1 @@
-# [Electron](https://electronjs.org/) Sandbox
+# [Electron](https://electronjs.org/) Sandbox 🔌
